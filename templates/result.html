@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+РЕЗУЛЬТАТ
+{% endblock %}
+
+{% block body %}
+    {% if result %}
+      <h1> <img src="{{ url_for('send_file', filename=filename)}}" class = "result_image" > Ваш возраст: {{ result }}    </h1>
+    {% else %}
+    {% endif %}
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block body %}
+<main class="px-3">
+        <h1>Загрузи картинку.</h1>
+        <p class="lead">Нейросеть распознает, все что на картинке и не только!</p>
+        <p class="lead">
+        <form method=post enctype=multipart/form-data>
+          <div class="input-group flex-block">
+            <input type="file" name=file class="form-control" id="inputGroupFile04" style="width: 100%" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button type=submit value=Upload class="btn btn-primary download-btn">Загрузить</button>
+           </div>
+        </form>
+
+
+        </p>
+      </main>
+
+
+{% endblock %}
